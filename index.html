@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposive SideBar</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <i class="fas fa-bars " id="btn"></i>
+        <div class="logo_content">
+            <div class="logo">
+                <i class="fas fa-atom"></i>
+                <div class="logo_name">SiderBar</div>
+            </div>
+        </div>
+        <ul class="nav_list">
+            <li>    
+                <input type="text" placeholder="Search..">
+            </li>
+            <li>
+                <a href="">
+                <i class="fas fa-border-all"></i>
+                <span class="links_name">Dashbord</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="far fa-user"></i>
+                <span class="links_name">User</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                <i class="far fa-comment-alt"></i>
+                <span class="links_name">Messagens/span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                <i class="fas fa-chart-pie"></i>
+                <span class="links_name">Analytics</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                <i class="far fa-folder"></i>
+                <span class="links_name">File Manager</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="links_name">Shop</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                <i class="fas fa-cog"></i>
+                <span class="links_name">Settings</span>
+                </a>
+            </li>
+        </ul>
+
+
+        <div class="content_perfil">
+
+            <div class="wrapper_image">
+                <img src="MINHAFOTO.jpg" alt="foto de perfil">
+            </div>
+
+            <div class="items">
+                <h1>Giovanne</h1>
+                <span class="item_perfil">Web Developer</span>
+            </div>
+
+            <div class="logout">
+                <i class="fas fa-sign-out-alt"></i>
+            </div>
+
+        </div>
+    </div>
+    
+    <script>
+        let btn = document.querySelector("#btn")
+        let sidebar = document.querySelector(".sidebar")
+        btn.onclick = function(){
+            sidebar.classList.toggle("active")
+            btn.classList.toggle("active")
+        }
+        
+    </script>
+</body>
+</html>

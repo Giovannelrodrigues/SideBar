@@ -1,0 +1,159 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidebar{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 100%;
+    width: 240px;
+    background: #11101d;
+    padding: 6px 14px;
+    transition: all 1s;
+}
+
+.sidebar.active{
+    left: -240px;
+}
+
+.sidebar .logo_content .logo{
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.search.active{
+    opacity: 0;
+}
+
+.sidebar .logo_content .logo i{
+    font-size: 1.5rem;
+}
+
+.sidebar .logo_content .logo .logo_name{
+    font-size: 1.3rem;
+    padding-left: 0.8rem;
+}
+
+.sidebar #btn{
+    position: fixed;
+    color: rgb(131, 128, 128);
+    right: px;
+    top: 6px;
+    left: 190px;
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.sidebar ul {
+    margin-top: 50px;
+}
+
+.sidebar ul li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 5px;
+    line-height: 50px;
+}
+.sidebar ul li a{
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: all 0.5s;
+}
+
+.sidebar ul li a:hover{
+    color: #11101d;
+    background-color: #ffffff;
+}
+
+.sidebar ul li a i{
+    height: 50px;
+    min-width: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.sidebar ul li input{
+    font-size:1.2rem;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background-color: #1d1b31;
+    text-align: center;
+    padding-right: 50px;
+    color: #ffffff;
+}
+
+.sidebar .content_perfil{
+    height: 100px;
+    width: 100%;
+    background-color: #1d1b31;
+    border-radius: 12px ;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    bottom: 2px;
+    left: 0;
+
+}
+
+.sidebar .content_perfil .wrapper_image{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+}
+
+.sidebar .content_perfil .wrapper_image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.sidebar .content_perfil .items{
+    font-family: sans-serif;
+    font-size: 0.5rem;
+    color: white;
+    display: block;
+}
+
+.sidebar .content_perfil .items .item_perfil{
+    padding-top: 0.5rem;
+    font-size: 0.7rem;
+}
+
+.sidebar .content_perfil .logout{
+    color: #ffffff;
+    position: absolute;
+    right: 25px;
+    font-size: 1.5rem;
+}
